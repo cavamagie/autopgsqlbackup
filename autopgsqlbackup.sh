@@ -30,7 +30,7 @@
 #=====================================================================
 
 # Username to access the PostgreSQL server e.g. dbuser
-USERNAME=postgres
+USERNAME=$POSTGRES_USER
 
 # Password
 # create a file $HOME/.pgpass containing a line like this
@@ -39,13 +39,13 @@ USERNAME=postgres
 # the value of USERNAME
 
 # Host name (or IP address) of PostgreSQL server e.g localhost
-DBHOST=localhost
+DBHOST=$POSTGRES_HOST
 
 # List of DBNAMES for Daily/Weekly Backup e.g. "DB1 DB2 DB3"
-DBNAMES="all"
+DBNAMES=$POSTGRES_DB
 
 # Backup directory location e.g /backups
-BACKUPDIR="/var/backups/postgres"
+BACKUPDIR=$BACKUP_DIR
 
 # Mail setup
 # What would you like to be mailed to you?
