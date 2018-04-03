@@ -19,6 +19,8 @@ ENV BACKUP_KEEP_MONTHS 6
 
 COPY autopgsqlbackup.sh go-cron ./
 
+RUN chmod -R 777 autopgsqlbackup.sh go-cron
+
 
 VOLUME /backups
 
