@@ -2,8 +2,6 @@ FROM debian
 
 RUN set -x \
 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates curl postgresql-client && rm -rf /var/lib/apt/lists/* \
-	&& curl -L https://github.com/odise/go-cron/releases/download/v0.0.7/go-cron-linux.gz | zcat > /usr/local/bin/go-cron \
-	&& chmod a+x /usr/local/bin/go-cron \
 	&& apt-get purge -y --auto-remove ca-certificates && apt-get clean
 
 ENV POSTGRES_DB **None**
@@ -27,7 +25,7 @@ RUN chmod -R 777 autopgsqlbackup.sh go-cron
 VOLUME /backups
 
 ENTRYPOINT ["/bin/sh", "-c"]
-CMD ["exec go-cron -s \"$SCHEDULE\" -p 80 -- /autopgsqlbackup.sh"]
+CMD ["exec ./go-cron -s \"$SCHEDULE\" -p 80 -- /autopgsqlbackup.sh"]
 
 HEALTHCHECK --interval=5m --timeout=3s \
   CMD curl -f http://localhost/ || exit 1
