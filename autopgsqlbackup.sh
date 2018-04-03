@@ -39,7 +39,7 @@ USERNAME=$POSTGRES_USER
 # the value of USERNAME
 
 # Host name (or IP address) of PostgreSQL server e.g localhost
-POSTGRES_HOST=$POSTGRES_PORT_5432_TCP_ADDR
+#POSTGRES_HOST=$POSTGRES_PORT_5432_TCP_ADDR
 DBHOST=$POSTGRES_HOST
 
 # List of DBNAMES for Daily/Weekly Backup e.g. "DB1 DB2 DB3"
