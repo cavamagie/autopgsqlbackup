@@ -1,4 +1,4 @@
- Installing AWX
+autopgsqlbackup
 
 This document provides a guide for installing AWX.
 
@@ -6,38 +6,10 @@ This document provides a guide for installing AWX.
 
 - [Getting started](#getting-started)
   - [Clone the repo](#clone-the-repo)
-  - [AWX branding](#awx-branding)
-  - [Prerequisites](#prerequisites)
-  - [System Requirements](#system-requirements)
-  - [AWX Tunables](#awx-tunables)
-  - [Choose a deployment platform](#choose-a-deployment-platform)
-  - [Official vs Building Images](#official-vs-building-images)
 - [OpenShift](#openshift)
   - [Prerequisites](#prerequisites-1)
     - [Deploying to Minishift](#deploying-to-minishift)
-  - [Pre-build steps](#pre-build-steps)
-  - [PostgreSQL](#postgresql)
-  - [Start the build](#start-the-build)
-  - [Post build](#post-build)
-  - [Accessing AWX](#accessing-awx)
-- [Kubernetes](#kubernetes)
-  - [Prerequisites](#prerequisites-2)
-  - [Pre-build steps](#pre-build-steps-1)
-  - [Configuring Helm](#configuring-helm)
-  - [Start the build](#start-the-build-1)
-  - [Accessing AWX](#accessing-awx-1)
-  - [SSL Termination](#ssl-termination)
-- [Docker or Docker Compose](#docker-or-docker-compose)
-  - [Prerequisites](#prerequisites-3)
-  - [Pre-build steps](#pre-build-steps-2)
-    - [Deploying to a remote host](#deploying-to-a-remote-host)
-    - [Inventory variables](#inventory-variables)
-      - [Docker registry](#docker-registry)
-      - [PostgreSQL](#postgresql-1)
-      - [Proxy settings](#proxy-settings)
-  - [Start the build](#start-the-build-2)
-  - [Post build](#post-build-1)
-  - [Accessing AWX](#accessing-awx-2)
+
 
 ## Getting started
 
