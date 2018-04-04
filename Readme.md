@@ -1,5 +1,5 @@
 
-docker based on debian that use a script autopgsqlbackup to manage a schedule backup of a postgres docker
+docker based on debian that use a script autopgsqlbackup code written by Aaron Axelsen to manage a schedule backup of a postgres docker
 
 
 autopgsqlbackup
