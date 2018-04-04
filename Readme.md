@@ -48,5 +48,11 @@ autopgsqlbackup
 
 ### dafault backup rotation 
 
-
+ Daily Backups are rotated weekly..
+ Weekly Backups are run by default on Saturday Morning when
+ Weekly Backups are rotated on a 5 week cycle..
+ Monthly Backups are run on the 1st of the month..
+ Monthly Backups are NOT rotated automatically...
+ It may be a good idea to copy Monthly backups offline or to another
+ server..
 
