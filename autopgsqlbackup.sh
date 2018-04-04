@@ -1,5 +1,6 @@
 #!/bin/bash
 #
+#from script :
 # PostgreSQL Backup Script Ver 1.0
 # http://autopgsqlbackup.frozenpc.net
 # Copyright (c) 2005 Aaron Axelsen <axelseaa@amadmax.com>
@@ -24,6 +25,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
+#edited to work in docker system used to backup an active istance of dockerized postgres
 #=====================================================================
 # Set the following variables to your system needs
 # (Detailed instructions below variables)
@@ -82,7 +84,7 @@ SEPDIR=yes
 DOWEEKLY=6
 
 # Choose Compression type. (gzip or bzip2)
-COMP=bzip2
+COMP=gzip
 
 # Command to run before backups (uncomment to use)
 #PREBACKUP="/etc/pgsql-backup-pre"
