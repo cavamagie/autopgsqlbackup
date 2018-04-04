@@ -7,14 +7,14 @@ autopgsqlbackup
 
 - [Getting started](#getting-started)
   - [usind docker-compose](#docker-compose.yml)
-- [OpenShift](#openshift)
-  - [Prerequisites](#prerequisites-1)
-    - [Deploying to Minishift](#deploying-to-minishift)
 
 
 ## Getting started
 
 ### docker-compose.yml
+```yml
+
+
   postgres:
     image: postgres:9.6
     ports:
@@ -43,6 +43,7 @@ autopgsqlbackup
       POSTGRES_DB: database
       POSTGRES_USER: user
       PGPASSWORD: password
+```
 
 
 ### dafault backup rotation 
