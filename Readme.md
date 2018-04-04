@@ -7,6 +7,7 @@ autopgsqlbackup
 
 - [Getting started](#getting-started)
   - [usind docker-compose](#docker-compose.yml)
+  - [dafault backup rotation](#dafault backup rotation)
 
 
 ## Getting started
@@ -47,7 +48,7 @@ autopgsqlbackup
 
 
 ### dafault backup rotation 
-
+```yml
  Daily Backups are rotated weekly..
  Weekly Backups are run by default on Saturday Morning when
  Weekly Backups are rotated on a 5 week cycle..
@@ -55,4 +56,4 @@ autopgsqlbackup
  Monthly Backups are NOT rotated automatically...
  It may be a good idea to copy Monthly backups offline or to another
  server..
-
+```
