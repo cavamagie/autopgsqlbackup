@@ -55,7 +55,7 @@ BACKUPDIR=$BACKUP_DIR
 # - log   : send only log file
 # - files : send log file and sql files as attachments (see docs)
 # - stdout : will simply output the log to the screen if run manually.
-MAILCONTENT="log"
+MAILCONTENT="stdout"
 
 # Set the maximum allowed email size in k. (4000 = approx 5MB email [see docs])
 MAXATTSIZE="4000"
