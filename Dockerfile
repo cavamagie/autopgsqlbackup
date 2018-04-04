@@ -10,7 +10,7 @@ ENV POSTGRES_PORT 5432
 ENV POSTGRES_USER **None**
 ENV BACKUP_DIR '/backups'
 ENV PGPASSWORD **None**
-ENV PGPASSWORD @daily
+ENV SCHEDULE '@daily'
 
 COPY autopgsqlbackup.sh go-cron ./
 
