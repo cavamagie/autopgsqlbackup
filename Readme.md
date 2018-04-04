@@ -57,3 +57,5 @@ autopgsqlbackup
  It may be a good idea to copy Monthly backups offline or to another
  server..
 ```
+### dafault backup compression 
+gzip
