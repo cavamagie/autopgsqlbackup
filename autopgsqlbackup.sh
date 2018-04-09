@@ -415,6 +415,7 @@ echo Backup Start `date`
 echo ======================================================================
 	# Monthly Full Backup of all Databases
 	if [ $DOM = "01" ]; then
+	       eval find "$BACKUPDIR/weekly/$DB/*"  -type f -mtime +30 -delete
 		echo Monthly full Backup of \( $MDBNAMES \)...
 			dbdump "$MDBNAMES" "$BACKUPDIR/monthly/$DATE.$M.all-databases.sql"
 			compression "$BACKUPDIR/monthly/$DATE.$M.all-databases.sql"
